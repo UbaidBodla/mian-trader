@@ -277,39 +277,33 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Container(
-                child: Rounded_Button(
-                  title: 'Search',
-                  onPressed: (){
-                    print('$search');
-                    showSearch(context:context, delegate: serachDeligat());
-                  },
-//                  child: TextFormField(
-//                    textAlign: TextAlign.center,
-//
-//                      controller: _name,
-//                      decoration: InputDecoration(
-//                        contentPadding: EdgeInsets.symmetric(vertical: 10.0,horizontal: 20.0),
-//                        border: OutlineInputBorder(
-//                          borderSide: BorderSide(color:Colors.blueAccent,width: 1.0),
-//                          borderRadius: BorderRadius.circular(32.0),
-//                        ),
-//                        enabledBorder: OutlineInputBorder(
-//                            borderSide: BorderSide(color: Colors.blueAccent),
-//                            borderRadius: BorderRadius.circular(32.0)
-//                        ),
-//                        focusedBorder: OutlineInputBorder(
-//                          borderSide: BorderSide(color: Colors.blueAccent,width: 2.0),
-//                          borderRadius: BorderRadius.circular(32.0),
-//                        ),
-//                        hintText: 'Enter Item',
-//
-//                      ),
-//                      validator: (value){
-////                      Navigator.push(context, Serchitemsbymod.id);
-//                      }
-//                  ),
+
+                  child: TextFormField(
+                    textAlign: TextAlign.center,
+
+                      controller: _name,
+                      decoration: InputDecoration(
+                        contentPadding: EdgeInsets.symmetric(vertical: 10.0,horizontal: 20.0),
+                        border: OutlineInputBorder(
+                          borderSide: BorderSide(color:Colors.blueAccent,width: 1.0),
+                          borderRadius: BorderRadius.circular(32.0),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.blueAccent),
+                            borderRadius: BorderRadius.circular(32.0)
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.blueAccent,width: 2.0),
+                          borderRadius: BorderRadius.circular(32.0),
+                        ),
+                        hintText: 'Enter Item',
+
+                      ),
+                      validator: (value){
+                      }
+                  ),
                 )
-              )
+
             ],
           ),
         ),
@@ -373,4 +367,3 @@ class serachDeligat extends SearchDelegate<String>{
     return Container();
   }
 }
-
