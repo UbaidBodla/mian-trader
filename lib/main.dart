@@ -12,40 +12,28 @@ import 'categories.dart';
 import 'Searchitemsonly.dart';
 import 'SearchDeligate.dart';
 
-
-void main(){
+void main() {
   runApp(MyApp());
-
-
 }
-
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute:MyHomePage.id,
+      initialRoute: MyHomePage.id,
       routes: {
-        Login.id:(context)=> Login(),
-        Registration.id:(context)=> Registration(),
-        Welcome.id:(context)=> Welcome(),
-        Sp_screen.id:(context)=> Sp_screen(),
-        MyHomePage.id:(context)=> MyHomePage(),
-        About.id:(context)=> About(),
-        My_account.id:(context)=> My_account(),
-        Settings.id:(context)=> Settings(),
-        Items.id:(context)=> Items(),
-        ItemsOnly.id:(context)=>ItemsOnly(),
-        Serchitemsbymod.id:(context)=>Serchitemsbymod(),
-
-
+        Login.id: (context) => Login(),
+        Registration.id: (context) => Registration(),
+        Welcome.id: (context) => Welcome(),
+        Sp_screen.id: (context) => Sp_screen(),
+        MyHomePage.id: (context) => MyHomePage(),
+        About.id: (context) => About(),
+        My_account.id: (context) => My_account(),
+        Settings.id: (context) => Settings(),
+        Items.id: (context) => Items(),
+        ItemsOnly.id: (context) => ItemsOnly(),
+        Serchitemsbymod.id: (context) => Serchitemsbymod(),
       },
-
     );
   }
 }
-
-
-
-
-

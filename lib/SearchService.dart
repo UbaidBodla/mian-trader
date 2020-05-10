@@ -12,8 +12,7 @@ class SearchService {
         return snaps.documents;
       });
 
-  Future<List<DocumentSnapshot>> getSuggestion(String suggestion) async =>
-      await _firestore
+  Future<List<DocumentSnapshot>> getSuggestion(String suggestion) async => await _firestore
           .collection(ref)
           .where('items', isEqualTo: suggestion)
           .getDocuments()
