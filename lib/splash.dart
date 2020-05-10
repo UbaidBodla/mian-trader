@@ -1,17 +1,16 @@
 import 'dart:core';
+import 'dart:io';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:fmiantrader/My_account.dart';
-import 'package:fmiantrader/categories.dart';
-import 'package:fmiantrader/componenets.dart';
-import 'package:fmiantrader/items_only.dart';
 import 'package:fmiantrader/SearchService.dart';
-import 'SearchService.dart';
-import 'Searchitemsonly.dart';
+import 'package:fmiantrader/categories.dart';
+import 'package:fmiantrader/items_only.dart';
+
 import 'Details.dart';
+import 'SearchService.dart';
 import 'Settings.dart';
 import 'about.dart';
 import 'dart:convert';
@@ -37,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {});
   }
 
-  TextEditingController _name = TextEditingController();
+  // TextEditingController _name = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
